@@ -24,6 +24,6 @@ function Main(props) {
     }
   }
 
-  return <main>{View(NavState)}</main>;
+  return <main className='main-content'>{View(NavState)}</main>;
 }
 export default Main;

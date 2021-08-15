@@ -4,8 +4,9 @@
 
 :root {
   --main: hsl(207, 44%, 49%);
-  --secondary: hsla(260, 60%, 33%, 1);
-  --accent: hsl(240, 64%, 27%);
+  /* --secondary: hsla(260, 20%, 33%, 0.5); */
+  --secondary: mintcream;
+  --accent: hsl(240, 45%, 27%);
   --error: hsl(0, 100%, 40%);
 }
 
@@ -18,6 +19,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: var(--secondary);
 }
 
 .App-header {
@@ -46,13 +48,30 @@ h1 {
   font-size: calc(20px + 2vmin);
 }
 
+h2 {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.3em;
+  margin-block: 0.5em;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
 }
 
+.nav-bar {
+  background-color: var(--accent);
+}
+
 .nav-bar-item {
-  padding-inline: 2rem;
+  padding-inline: 2em;
+  margin-block: 5px;
+}
+
+.nav-bar-item:hover {
+  background-color: var(--main);
+  border-radius: 5px;
 }
 
 li {
@@ -63,4 +82,28 @@ li {
 .title-card {
   text-align: left;
   margin: 1rem;
+}
+
+.main-content {
+  margin-inline: 10vw;
+  padding: 1em;
+  display: flex;
+}
+
+.content-block {
+  line-height: 1.5;
+  font-size: calc(10px + 1vmin);
+  margin-top: 1em;
+}
+
+#bio-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1em;
+}
+
+#bio-block > img {
+  border-radius: 50%;
+  border: 1px solid var(--accent);
 }

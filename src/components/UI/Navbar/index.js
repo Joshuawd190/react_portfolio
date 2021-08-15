@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar({ setNavState }) {
   return (
-    <nav>
+    <nav className='nav-bar'>
       <ul className='flex-row'>
         <li className='nav-bar-item'>
           <a href='#about' onClick={() => setNavState('Bio')}>
