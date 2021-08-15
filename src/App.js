@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <Header setNavState={setNavState} NavState={NavState} />
+      <Header setNavState={setNavState} />
       <Main NavState={NavState} />
       <Footer />
     </div>

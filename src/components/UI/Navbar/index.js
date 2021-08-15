@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar({ setNavState, NavState }) {
+function Navbar({ setNavState }) {
   return (
     <nav>
       <ul className='flex-row'>
@@ -10,17 +10,17 @@ function Navbar({ setNavState, NavState }) {
           </a>
         </li>
         <li className='nav-bar-item'>
-          <a href='#about' onClick={() => setNavState('Projects')}>
+          <a href='#projects' onClick={() => setNavState('Projects')}>
             Projects
           </a>
         </li>
         <li className='nav-bar-item'>
-          <a href='#about' onClick={() => setNavState('Resume')}>
+          <a href='#resume' onClick={() => setNavState('Resume')}>
             Resume
           </a>
         </li>
         <li className='nav-bar-item'>
-          <a href='#about' onClick={() => setNavState('Contact')}>
+          <a href='#contact' onClick={() => setNavState('Contact')}>
             Contact Me
           </a>
         </li>

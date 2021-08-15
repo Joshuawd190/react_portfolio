@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 
-function Header({ setNavState, NavState }) {
+function Header({ setNavState }) {
   return (
     <header className='App-header'>
       <div className='title-card'>
@@ -9,7 +9,7 @@ function Header({ setNavState, NavState }) {
         <p>Web Developer</p>
       </div>
       <hr></hr>
-      <Navbar setNavState={setNavState} NavState={NavState} />
+      <Navbar setNavState={setNavState} />
     </header>
   );
 }
