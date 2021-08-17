@@ -2,7 +2,7 @@ import React from 'react';
 function PageNotFound() {
   return (
     <>
-      <p>This page was not found</p>
+      <p className='content-block'>This page was not found</p>
     </>
   );
 }

@@ -3,7 +3,7 @@ function Resume() {
   return (
     <div>
       <h2>Resume:</h2>
-      <p>
+      <p className='content-block'>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
