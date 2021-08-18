@@ -7,7 +7,7 @@ function Project(props) {
       <img alt='' src={require(`../../../assets/images/${img}`).default} />
       <h3>{name}</h3>
       <p className='hide'>
-        {desc} <br></br> Built using: {tech}
+        {desc} {'\n'} Built using: {tech}
       </p>
 
       <div className='project-links'>
