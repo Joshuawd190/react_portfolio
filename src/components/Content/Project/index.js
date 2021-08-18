@@ -10,7 +10,7 @@ function Project(props) {
         {desc} <br></br> Built using: {tech}
       </p>
 
-      <div>
+      <div className='project-links'>
         <a href={github} className='hide'>
           Repository
         </a>

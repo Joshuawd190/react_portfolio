@@ -7,20 +7,22 @@ function Projects() {
     <div>
       <h2>Projects:</h2>
 
-      {projects.map((project, i) => {
-        let { name, desc, github, link, tech, img } = project;
-        return (
-          <Project
-            key={i + name}
-            name={name}
-            desc={desc}
-            github={github}
-            link={link}
-            tech={tech}
-            img={img}
-          />
-        );
-      })}
+      <div className='flex-row gap'>
+        {projects.map((project, i) => {
+          let { name, desc, github, link, tech, img } = project;
+          return (
+            <Project
+              key={i + name}
+              name={name}
+              desc={desc}
+              github={github}
+              link={link}
+              tech={tech}
+              img={img}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
