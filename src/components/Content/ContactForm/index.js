@@ -50,25 +50,27 @@ function ContactForm() {
       <div className='content-block'>
         <form id='contact-form' onSubmit={handleSubmit}>
           <div>
-            <label htmlFor='name'>Name:</label>
+            <label htmlFor='name'>Name: </label>
+            <br></br>
             <input
               type='text'
               name='name'
               defaultValue={name}
               onBlur={handleChange}
-            />
+            ></input>
           </div>
           <div>
-            <label htmlFor='email'>Email address:</label>
+            <label htmlFor='email'>Email address: </label>
+
             <input
               type='email'
               name='email'
               defaultValue={email}
               onBlur={handleChange}
-            />
+            ></input>
           </div>
           <div>
-            <label htmlFor='message'>Message:</label>
+            <label htmlFor='message'>Message: </label>
             <textarea
               name='message'
               rows='5'
@@ -81,7 +83,9 @@ function ContactForm() {
               <p className='error-text'>{errorMessage}</p>
             </div>
           )}
-          <button type='submit'>Submit</button>
+          <button type='submit' className='contact-btn'>
+            Submit
+          </button>
         </form>
       </div>
     </div>

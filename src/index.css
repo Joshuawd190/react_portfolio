@@ -11,6 +11,10 @@
   --error: hsl(0, 100%, 40%);
 }
 
+.error-text {
+  color: var(--error);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -104,15 +108,24 @@ li {
 /* About Me Page */
 
 #bio-block {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-auto-flow: row;
   gap: 1em;
 }
 
 #bio-block > img {
-  border-radius: 50%;
   border: 1px solid var(--accent);
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 700px) {
+  #bio-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
 }
 
 /* Project Page */
@@ -191,9 +204,53 @@ li {
 
 .project-container a:hover {
   border: 2px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 /* Contact Form */
+
+textarea {
+  width: 600px;
+  height: 120px;
+  border: 1px solid var(--accent);
+  padding: 5px;
+  margin: 0.5em;
+}
+
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--accent);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  margin: 0.5em;
+}
+
+input:focus {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-btn {
+  background-color: var(--accent);
+  border: 2px solid transparent;
+  padding: 0.5em;
+  color: white;
+  font-size: calc(10px + 1vmin);
+  margin: 0.5em;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  border: 2px solid var(--secondary);
+  background-color: var(--main);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
 
 /* Utility */
 
