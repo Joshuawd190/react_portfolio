@@ -17,6 +17,15 @@ const projects = [
     img: 'dolphin',
     imgname: 'Dolphin-Group.png',
   },
+  {
+    name: 'Dev Me Up!',
+    desc: 'Linkin meets Tinder',
+    github: 'https://github.com/Joshuawd190/Dev-it-to-You',
+    link: 'https://mysterious-temple-90706.herokuapp.com/',
+    tech: 'React, Node.js, Material-UI, MongoDB, Mongoose, Graphql, Apollo Server Express, ExpressJS',
+    img: 'Saucer',
+    imgname: 'Dev-Me-Up.png',
+  },
 ];
 
 export default projects;

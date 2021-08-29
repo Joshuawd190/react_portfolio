@@ -1,18 +1,15 @@
 import React from 'react';
+
 function Bio() {
   return (
     <div>
       <h2>About Me:</h2>
       <div id='bio-block'>
-        <img alt='' src='https://via.placeholder.com/150' />
+        <img alt='' src='../../../assets/images/Me.jpg' />
         <p className='content-block'>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          Hello! I am full-stack web developer in training! I am currently
+          taking classes and expect to graduate in August 2021. You can see some
+          examples of my work in the Projects tab.
         </p>
       </div>
     </div>
