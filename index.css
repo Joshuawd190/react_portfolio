@@ -116,8 +116,8 @@ li {
 
 #bio-block > img {
   border: 1px solid var(--accent);
+
   width: 150px;
-  height: 150px;
 }
 
 @media screen and (max-width: 700px) {
