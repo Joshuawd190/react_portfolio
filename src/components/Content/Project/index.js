@@ -1,9 +1,22 @@
 import React from 'react';
 import wayfinder from '../../../assets/images/Chicago-Art-Wayfinder-Home-min.jpg';
 import dolphin from '../../../assets/images/Dolphin-Group-min.jpg';
+import Saucer from '../../../assets/images/Dev-Me-Up.png';
 
 function Project(props) {
   let { name, desc, github, link, tech, img } = props;
+
+  switch (img) {
+    case 'dolphin':
+      img = dolphin;
+      break;
+    case 'wayfinder':
+      img = wayfinder;
+      break;
+    case 'Saucer':
+      img = Saucer;
+      break;
+  }
   return (
     <div className='project-container'>
       <img alt='' src={img} />
