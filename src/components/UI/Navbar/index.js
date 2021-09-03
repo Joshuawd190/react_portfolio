@@ -14,11 +14,11 @@ function Navbar({ setNavState }) {
             Projects
           </a>
         </li>
-        <li className='nav-bar-item'>
+        {/* <li className='nav-bar-item'>
           <a href='#resume' onClick={() => setNavState('Resume')}>
             Resume
           </a>
-        </li>
+        </li> */}
         <li className='nav-bar-item'>
           <a href='#contact' onClick={() => setNavState('Contact')}>
             Contact Me
